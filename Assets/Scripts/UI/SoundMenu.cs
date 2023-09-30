@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundMenu : MonoBehaviour
+public class SoundMenu : BaseMenu
 {
     [SerializeField] private GameObject soundWindow = null;
 	[Header("Music")]
@@ -23,12 +23,12 @@ public class SoundMenu : MonoBehaviour
 
 	private void Update() {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
-			if (soundWindow.activeSelf) CloseSoundMenu();
-			else OpenSoundMenu();
+			if (soundWindow.activeSelf) CloseMenu();
+			else OpenMenu();
 		}
 	}
 
-	public void OpenSoundMenu() {
+	public override void OpenMenu() {
 		soundWindow.SetActive(true);
 		for (int i = 0; i < soundBar.Count; i++) {
 			if (i <= currentSoundIndex) {
@@ -46,7 +46,7 @@ public class SoundMenu : MonoBehaviour
 		}
 	}
 
-	public void CloseSoundMenu() {
+	public override void CloseMenu() {
 		soundWindow.SetActive(false);
 	}
 

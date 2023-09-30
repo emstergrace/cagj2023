@@ -51,59 +51,9 @@ public class NodeCanvas : ScriptableObject {
         foreach(Connection other in conn) {
             _connections.Add(new Connection(other));
 		}
-        //RefreshNodePair();
-    }
-    /*
-    private void OnEnable()
-    {
-        if ((_nodeTable == null || _nodeTable.Count == 0) && nodes != null)
-        {
-            _nodeTable = new Dictionary<string, Node>();
-            foreach (Node n in nodes)
-            {
-                _nodeTable.Add(n.id, n);
-            }
-            RefreshNodePair();
-        }
+        
     }
 
-    //[UnityEditor.Callbacks.DidReloadScripts]
-    public void RefreshNodePair()
-    {
-        root = null;
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            if (!_nodeTable.ContainsKey(nodes[i].id)) _nodeTable.Add(nodes[i].id, nodes[i]);
-        }
-
-        if (connections != null) connections.Clear();
-        else _connections = new List<Connection>();
-
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            Node rightNode;
-            Node leftNode;
-            if (!string.IsNullOrEmpty(nodes[i].nextNodeID))
-            {
-                _nodeTable.TryGetValue(nodes[i].nextNodeID, out rightNode);
-                nodes[i].nextNode = rightNode;
-
-                Connection copy = new Connection(nodes[i].nextNode.inPoint, nodes[i].outPoint, OnClickRemoveConnection);
-                if (!connections.Contains(copy)) connections.Add(copy);
-            }
-            if (!string.IsNullOrEmpty(nodes[i].prevNodeID))
-            {
-                _nodeTable.TryGetValue(nodes[i].prevNodeID, out leftNode);
-                nodes[i].previousNode = leftNode;
-            }
-
-            if (nodes[i].isRoot == true)
-            {
-                root = nodes[i];
-            }
-        }
-    }
-    */
 
     private void OnClickRemoveConnection(Connection connection)
     {
