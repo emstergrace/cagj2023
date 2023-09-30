@@ -13,14 +13,18 @@ public class CameraController : MonoBehaviour
     [SerializeField] private int minFOV = 30;
     [SerializeField] private int maxFOV = 60;
     [SerializeField] private int defaultFOV = 60;
-    [SerializeField] private int zoomSpeed = 4;
-    [SerializeField] private float swivelSpeed = 10f;
+    [SerializeField] private float zoomSpeed = 0.4f;
+    [SerializeField] private float rotSpeed = 1f;
+    [SerializeField] private Vector3 zoomOutPos = new Vector3(0f, 10.5f, -11.85f);
+    [SerializeField] private float zoomOutRot = 47.6f;
 
-    private bool isSwiveling = false;
-    private float initMPSwivel = 0f; // init mouse position swivel
+    private Vector3 initPosition = Vector3.zero;
+    private float initRotEuler = 0f;
 
 	private void Awake() {
         Inst = this;
+        initPosition = transform.localPosition;
+        initRotEuler = transform.rotation.eulerAngles.x;
 	}
 
 	// Start is called before the first frame update
@@ -35,16 +39,20 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.mouseScrollDelta != Vector2.zero) {
-            float newFOV = mainCamera.fieldOfView - Input.mouseScrollDelta.y * zoomSpeed;
+        if (Input.mouseScrollDelta.y < 0f) {
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, zoomOutPos, zoomSpeed * Input.mouseScrollDelta.y * -1f);
+            transform.rotation = Quaternion.Euler(Mathf.MoveTowards(transform.rotation.eulerAngles.x, zoomOutRot, rotSpeed * Input.mouseScrollDelta.y * -1f), 180f, 0f);
+            //transform.rotation = Quaternion.Euler(Mathf.SmoothStep(initRotEuler, zoomOutRot, (transform.rotation.eulerAngles.x - rotSpeed * Input.mouseScrollDelta.y) / zoomOutRot), 180f, 0f);
 
-            if (newFOV < minFOV) mainCamera.fieldOfView = minFOV;
-            else if (newFOV > maxFOV) mainCamera.fieldOfView = maxFOV;
-            else mainCamera.fieldOfView = newFOV;
 		}
-    }
+        else if (Input.mouseScrollDelta.y > 0f) {
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, initPosition, zoomSpeed * Input.mouseScrollDelta.y);
+            transform.rotation = Quaternion.Euler(Mathf.MoveTowards(transform.rotation.eulerAngles.x, initRotEuler, rotSpeed * Input.mouseScrollDelta.y), 180f, 0f);
+            //transform.rotation = Quaternion.Euler(Mathf.SmoothStep(initRotEuler, zoomOutRot, (transform.rotation.eulerAngles.x - rotSpeed * Input.mouseScrollDelta.y) / zoomOutRot), 180f, 0f);
+        }
+	}
 
-    private void UpdateCameraPosition(Vector3 pos) {
-        cameraCenterPosition.transform.position = new Vector3(pos.x, 0f, pos.z);
+	private void UpdateCameraPosition(Vector3 pos) {
+        cameraCenterPosition.transform.position = new Vector3(pos.x, pos.y, pos.z);
     }
 }
