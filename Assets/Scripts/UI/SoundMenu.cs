@@ -51,7 +51,7 @@ public class SoundMenu : BaseMenu
 	}
 
 	public void LowerMusic() {
-		AudioManager.Inst.PlayButton();
+		AudioManager.Inst.PlaySound("Button");
 		if (currentMusicIndex >= 0) {
 			musicBar[currentMusicIndex].SetActive(false);
 			currentMusicIndex--;
@@ -61,7 +61,7 @@ public class SoundMenu : BaseMenu
 	}
 
 	public void RaiseMusic() {
-		AudioManager.Inst.PlayButton();
+		AudioManager.Inst.PlaySound("Button");
 		if (currentMusicIndex < 9) {
 			currentMusicIndex++;
 			musicBar[currentMusicIndex].SetActive(true);
@@ -71,7 +71,7 @@ public class SoundMenu : BaseMenu
 	}
 
 	public void LowerSound() {
-		AudioManager.Inst.PlayButton();
+		AudioManager.Inst.PlaySound("Button");
 		if (currentSoundIndex >= 0) {
 			soundBar[currentSoundIndex].SetActive(false);
 			currentSoundIndex--;
@@ -81,7 +81,7 @@ public class SoundMenu : BaseMenu
 	}
 
 	public void RaiseSound() {
-		AudioManager.Inst.PlayButton();
+		AudioManager.Inst.PlaySound("Button");
 		if (currentSoundIndex < 9) {
 			currentSoundIndex++;
 			soundVolume = (currentSoundIndex + 1) / 10f;

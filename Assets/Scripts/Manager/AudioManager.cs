@@ -8,9 +8,18 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Inst { get; private set; }
 
 	[SerializeField] private AudioListener playerListener;
+
+	#region sounds here
+	// ADD SOUNDS BELOW
 	[Header("Sounds")]
-	[SerializeField] private AudioSource buttonClick = null; public void PlayButton() { if (buttonClick != null) buttonClick.Play(); }
 	[SerializeField] private AudioSource walkNoise = null;
+	[SerializeField] private List<AudioClip> footNoises = new List<AudioClip>();
+
+	[SerializeField] private List<Sound> sounds = new List<Sound>(); 
+	public Dictionary<string, AudioSource> SoundsDictionary { get; private set; } = new Dictionary<string, AudioSource>();
+
+	#endregion
+
 	public void Walk() {
 		if (walkNoise != null && !walkNoise.isPlaying) {
 			footIndex = UnityEngine.Random.Range(0, footNoises.Count);
@@ -19,7 +28,6 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 	public void Sprint(bool val) { if (val && walkNoise.pitch != 2f) walkNoise.pitch = 2f; else if (!val && walkNoise.pitch != 1f) walkNoise.pitch = 1f; }
-	[SerializeField] private List<AudioClip> footNoises = new List<AudioClip>();
 	private int footIndex = 0;
 	[SerializeField] private List<AudioSource> sceneAudio = new List<AudioSource>();
 	private static float soundVolume = 0.5f; public static float Sound { get { return soundVolume; } }
@@ -32,6 +40,9 @@ public class AudioManager : MonoBehaviour
 
 	private void Awake() {
 		Inst = this;
+		for (int i = 0; i < sounds.Count; i++) {
+			SoundsDictionary.Add(sounds[i].name, sounds[i].audio);
+		}
 	}
 
 	private void Start() {
@@ -53,10 +64,11 @@ public class AudioManager : MonoBehaviour
 		foreach(AudioSource source in sceneAudio) {
 			source.volume = soundVolume;
 		}
-		if (buttonClick != null)
-		buttonClick.volume = level;
-		if (walkNoise != null)
-		walkNoise.volume = level / 2;
+		foreach (KeyValuePair<string, AudioSource> keys in SoundsDictionary) {
+			if (keys.Value != null)
+				keys.Value.volume = level;
+		}
+
 		NewSoundVolume?.Invoke(level);
 	}
 
@@ -70,4 +82,15 @@ public class AudioManager : MonoBehaviour
 		mainTheme.Play();
 		playerListener.gameObject.SetActive(true);
 	}
+
+	public void PlaySound(string name) {
+		SoundsDictionary[name].Play();
+	}
+
+}
+[System.Serializable]
+public class Sound
+{
+	public string name;
+	public AudioSource audio;
 }
