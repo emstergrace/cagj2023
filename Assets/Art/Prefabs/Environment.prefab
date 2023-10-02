@@ -1173,6 +1173,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CozyCafe
       objectReference: {fileID: 0}
+    - target: {fileID: 3048589277578749332, guid: 7d197e5550b1e6741be4477766bd8b12, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048589277578749332, guid: 7d197e5550b1e6741be4477766bd8b12, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ac9cb8942254aa43a98eab1890876b2, type: 2}
     - target: {fileID: 4488724786524737296, guid: 7d197e5550b1e6741be4477766bd8b12, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.01
