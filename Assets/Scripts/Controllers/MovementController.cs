@@ -24,13 +24,14 @@ public class MovementController : MonoBehaviour
 
 		if (direction != Vector2.zero) {
 			currentSpeed = isRunning ? runSpeed : moveSpeed;
-			rigidBody.MovePosition(rigidBody.position + new Vector3(direction.x, 0f, direction.y) * currentSpeed * Time.fixedDeltaTime);
+			rigidBody.AddForce(new Vector3(direction.x, 0f, direction.y) * currentSpeed - rigidBody.velocity, ForceMode.VelocityChange);
 			transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, new Vector3(direction.x, 0f, direction.y), turnSpeed * Time.fixedDeltaTime, 0f), Vector3.up);
 
 			NewPosition?.Invoke(rigidBody.position);
 		}
 		else {
 			currentSpeed = 0f;
+			rigidBody.velocity = Vector3.zero;
 		}
 
 		animator.SetFloat("speed", currentSpeed);

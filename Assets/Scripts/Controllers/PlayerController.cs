@@ -12,11 +12,6 @@ public class PlayerController : MonoBehaviour
 	private void Awake() {
         Inst = this;
 	}
-	// Start is called before the first frame update
-	void Start()
-    {
-        
-    }
 
     void FixedUpdate() {
 		Vector2 direction = new Vector2(-1f * Input.GetAxisRaw("Horizontal"), -1f * Input.GetAxisRaw("Vertical"));
