@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2989846005996472427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6893300112875762386}
+  - component: {fileID: 8588787572223395671}
+  - component: {fileID: 672081826817454609}
+  - component: {fileID: 8447773218342191431}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6893300112875762386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989846005996472427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.7595377, y: -0.6565492, z: 2.761298}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8588787572223395671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989846005996472427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0204876355e2c4d45bc23085b1da7e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoffeeArtChoices:
+  - name: Reginald
+    coffeeArtChoices: {fileID: 11400000, guid: d33bfb4fa1a2f7944909b52bbeb07f24, type: 2}
+--- !u!114 &672081826817454609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989846005996472427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42513145282d664284afa0a775ae667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerListener: {fileID: 0}
+  walkNoise: {fileID: 0}
+  footNoises: []
+  sounds:
+  - name: button
+    audio: {fileID: 0}
+  - name: coffeepour
+    audio: {fileID: 0}
+  sceneAudio: []
+  menuMusic: {fileID: 0}
+  mainTheme: {fileID: 0}
+--- !u!114 &8447773218342191431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989846005996472427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88286e399f7870409c320795e2e98df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bird: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  Sunflower: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  Dog: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  RainCloud: {fileID: 0}
+  Panda: {fileID: 0}
+  Bee: {fileID: 0}
+  Flower: {fileID: 0}
+  Anchor: {fileID: 0}
+  Penguin: {fileID: 0}
+  Pumpkin: {fileID: 0}
+  Wolf: {fileID: 0}
+  Heart: {fileID: 0}
+  Butterfly: {fileID: 0}
+  SadFace: {fileID: 0}
+  ReginaldSprite: {fileID: 21300000, guid: 41276f876580bf54fb4821216ce79c3c, type: 3}
+  SaanviSprite: {fileID: 21300000, guid: 8d0aff7fe3c2e364aa0ad369a7b5e348, type: 3}
+  BrinleySprite: {fileID: 21300000, guid: 3e0c2565d691e9e4aa0be333c8b76a7d, type: 3}
+  LazloSprite: {fileID: 21300000, guid: 3980b745d469d634e965939a67223607, type: 3}
+  SantiagoSprite: {fileID: 21300000, guid: 52bdd98ffaa0f634498bf88702b82039, type: 3}
+  squareBorder: {fileID: 21300000, guid: 0135a8a136e3d1442887cd95a58d6f72, type: 3}
+  squareBorderPressed: {fileID: 21300000, guid: 0ec5b44219060ff48a598f8623240e94, type: 3}
+  circleBorder: {fileID: 21300000, guid: f3c6a7012e663224390bdaff85eeb257, type: 3}
+  circleBorderPressed: {fileID: 21300000, guid: a52ac808a424796418117418c2bb0e16, type: 3}
