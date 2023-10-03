@@ -50,7 +50,7 @@ public class CoffeeBrewUI : MonoBehaviour
 
     public void AddCustomer(string name) {
         GameObject newCust = Instantiate(customerFacePrefab, CustomersContainer);
-        newCust.GetComponent<Image>().sprite = ResourcesLibrary.Inst.CustomerDictionary[name];
+        newCust.GetComponent<UnityEngine.UI.Image>().sprite = ResourcesLibrary.Inst.CustomerDictionary[name];
         newCust.GetComponent<Button>().onClick.AddListener(() => { SetCustomer(name); newCust.transform.localScale = Vector3.one * 1.35f; });
         CustomerGOs.Add(newCust);
 	}
