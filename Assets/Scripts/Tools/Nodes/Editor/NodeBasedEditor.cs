@@ -223,7 +223,8 @@ public class NodeBasedEditor : EditorWindow
     {
         GenericMenu genericMenu = new GenericMenu();
         genericMenu.AddItem(new GUIContent("Add dialogue node"), false, () => OnClickAddDialogueNode(mousePosition));
-        //genericMenu.AddItem(new GUIContent("Add camera node"), false, () => OnClickAddCameraNode(mousePosition));
+        genericMenu.AddItem(new GUIContent("Add response node"), false, () => OnClickAddResponseNode(mousePosition));
+        
         genericMenu.ShowAsContext();
     }
 
@@ -254,10 +255,11 @@ public class NodeBasedEditor : EditorWindow
         nodes.Add(newNode);
        
     }
-
-    private void OnClickAddCameraNode(Vector2 mousePosition)
+    
+    private void OnClickAddResponseNode(Vector2 mousePosition)
     {
-        Node newNode = new Node(mousePosition, 235, 80, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint, OnClickRemoveNode, OnClickChangeRoot);
+        //Instead of dialogue node, we just make NodeType a dialogue
+        ResponseNode newNode = new ResponseNode(mousePosition, ResponseNode.width, ResponseNode.height, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint, OnClickRemoveNode, OnClickChangeRoot);
         if (rootNode == null)
         {
             rootNode = newNode;
@@ -265,6 +267,7 @@ public class NodeBasedEditor : EditorWindow
         }
         _nodeTable.Add(newNode.id, newNode);
         nodes.Add(newNode);
+       
     }
 
     private void OnClickInPoint(ConnectionPoint inPoint)
