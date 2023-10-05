@@ -410,14 +410,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArtLayout
       objectReference: {fileID: 0}
-    - target: {fileID: 7825156572145147644, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7825156572145147644, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4ac9cb8942254aa43a98eab1890876b2, type: 2}
     - target: {fileID: 8942028036254249459, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6761806
