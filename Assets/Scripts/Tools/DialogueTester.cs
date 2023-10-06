@@ -28,5 +28,9 @@ public class DialogueTester : MonoBehaviour
 				}
 			}
 		}
+
+        if (Input.GetKeyDown(KeyCode.P)) {
+            Debug.Log(ConversationManager.Instance.CurrentConversation);
+		}
     }
 }
