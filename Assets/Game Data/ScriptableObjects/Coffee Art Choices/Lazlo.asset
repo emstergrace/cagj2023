@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15564c3e925c174449fa619cbe6f6e0c, type: 3}
   m_Name: Lazlo
   m_EditorClassIdentifier: 
-  choices: 0b0000000c0000000d000000
+  choices: 08000000090000000a000000
