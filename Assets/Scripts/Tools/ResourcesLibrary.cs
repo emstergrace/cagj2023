@@ -59,7 +59,7 @@ public class ResourcesLibrary : MonoBehaviour
 		CoffeeArtDictionary.Add(CoffeeArt.Heart, Heart);
 		CoffeeArtDictionary.Add(CoffeeArt.Butterfly, Butterfly);
 		CoffeeArtDictionary.Add(CoffeeArt.SadFace, SadFace);
-		CoffeeArtDictionary.Add(CoffeeArt.Fish, Fish)
+		CoffeeArtDictionary.Add(CoffeeArt.Fish, Fish);
 
 		CustomerDictionary.Add("Reginald", ReginaldSprite);
 		CustomerDictionary.Add("Saanvi", SaanviSprite);

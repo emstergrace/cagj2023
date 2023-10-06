@@ -16,7 +16,8 @@ public class CoffeeManager : MonoBehaviour
 		Matcha,
 		Cocoa,
 		Coffee,
-		Pumpkin
+		Pumpkin,
+		None
 	}
 
 	private void Awake() {
