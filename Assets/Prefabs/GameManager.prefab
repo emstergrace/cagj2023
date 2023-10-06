@@ -84,20 +84,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88286e399f7870409c320795e2e98df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  Sunflower: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  Dog: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  RainCloud: {fileID: 0}
-  Panda: {fileID: 0}
-  Bee: {fileID: 0}
-  Flower: {fileID: 0}
-  Anchor: {fileID: 0}
-  Penguin: {fileID: 0}
-  Pumpkin: {fileID: 0}
-  Wolf: {fileID: 0}
-  Heart: {fileID: 0}
-  Butterfly: {fileID: 0}
-  SadFace: {fileID: 0}
+  Bird: {fileID: 21300000, guid: c8d68551d52384d4f86de93bc4df4ce5, type: 3}
+  Sunflower: {fileID: 21300000, guid: 44382b5133e69c04cb1a43622aa3f7e8, type: 3}
+  Dog: {fileID: 21300000, guid: f07430042c5e6234da8244a2eff4211c, type: 3}
+  RainCloud: {fileID: 21300000, guid: 66c0a4cd578cdf64f83c7f6bd9639629, type: 3}
+  Panda: {fileID: 21300000, guid: 13771b335edb4b345a1ab291bf9f869e, type: 3}
+  Bee: {fileID: 21300000, guid: d4b36e444c865dc43b7e5c4cba1059cb, type: 3}
+  Flower: {fileID: 21300000, guid: 44382b5133e69c04cb1a43622aa3f7e8, type: 3}
+  Anchor: {fileID: 21300000, guid: c97b521a5b980114dacf1042e5aa8db1, type: 3}
+  Penguin: {fileID: 21300000, guid: e39b8b0b00ca50e4b82928c92f432258, type: 3}
+  Pumpkin: {fileID: 21300000, guid: 68d66e9175cddc245989c341a34054de, type: 3}
+  Wolf: {fileID: 21300000, guid: 4273aa066cf44ce4d93cf41f1743ad37, type: 3}
+  Heart: {fileID: 21300000, guid: 02566f336e4cfc64280d9c7ec5d0358f, type: 3}
+  Butterfly: {fileID: 21300000, guid: 379d1c80981a6c0469d9f41a9b77cc47, type: 3}
+  SadFace: {fileID: 21300000, guid: 8ed45303063c4e241b1d0c7abcc81be0, type: 3}
+  Fish: {fileID: 21300000, guid: 5d5971d73e5562948b031d674100e6e8, type: 3}
   ReginaldSprite: {fileID: 21300000, guid: 41276f876580bf54fb4821216ce79c3c, type: 3}
   SaanviSprite: {fileID: 21300000, guid: 8d0aff7fe3c2e364aa0ad369a7b5e348, type: 3}
   BrinleySprite: {fileID: 21300000, guid: 3e0c2565d691e9e4aa0be333c8b76a7d, type: 3}
