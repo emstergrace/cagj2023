@@ -84,8 +84,13 @@ public class AudioManager : MonoBehaviour
 	}
 
 	public void PlaySound(string name) {
-		if (SoundsDictionary.ContainsKey(name))
-			SoundsDictionary[name].Play();
+		if (SoundsDictionary.ContainsKey(name)) {
+			if (SoundsDictionary[name] != null)
+				SoundsDictionary[name].Play();
+			else {
+				Debug.LogError("Sounds dictionary contains listing for [" + name + "] but no sound associated");
+			}
+		}
 		else
 			Debug.LogError("Sounds dictionary does not contain sound for " + name);
 	}
