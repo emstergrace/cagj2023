@@ -42,6 +42,7 @@ public class ResourcesLibrary : MonoBehaviour
 	[SerializeField] private Sprite circleBorderPressed = null; public Sprite CircleBorderPressed { get { return circleBorderPressed; } }
 
 	private void Awake() {
+		if (Inst != null) Destroy(this.gameObject);
 		Inst = this;
 		DontDestroyOnLoad(this.gameObject);
 
