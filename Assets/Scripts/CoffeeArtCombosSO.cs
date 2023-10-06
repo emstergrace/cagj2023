@@ -23,5 +23,7 @@ public enum CoffeeArt
 	Wolf,
 	Heart,
 	Butterfly,
-	SadFace
+	SadFace,
+	Fish,
+	None
 }

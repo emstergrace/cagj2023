@@ -22,6 +22,7 @@ public class ResourcesLibrary : MonoBehaviour
 	[SerializeField] private Sprite Heart = null;
 	[SerializeField] private Sprite Butterfly = null;
 	[SerializeField] private Sprite SadFace = null;
+	[SerializeField] private Sprite Fish = null;
 
 	public Dictionary<CoffeeArt, Sprite> CoffeeArtDictionary { get; private set; } = new Dictionary<CoffeeArt, Sprite>();
 
@@ -58,6 +59,7 @@ public class ResourcesLibrary : MonoBehaviour
 		CoffeeArtDictionary.Add(CoffeeArt.Heart, Heart);
 		CoffeeArtDictionary.Add(CoffeeArt.Butterfly, Butterfly);
 		CoffeeArtDictionary.Add(CoffeeArt.SadFace, SadFace);
+		CoffeeArtDictionary.Add(CoffeeArt.Fish, Fish)
 
 		CustomerDictionary.Add("Reginald", ReginaldSprite);
 		CustomerDictionary.Add("Saanvi", SaanviSprite);
