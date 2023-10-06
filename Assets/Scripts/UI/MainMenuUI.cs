@@ -7,22 +7,18 @@ public class MainMenuUI : MonoBehaviour
 {
 	[SerializeField] private GameObject creditsWindow = null;
 
-	[SerializeField] private SoundMenu soundMenu = null;
-
 	public void PlayButton() {
-		AudioManager.Inst.PlaySound("Button");
-		SceneManager.LoadScene("EnvironmentTestScene");
+		AudioManager.Inst.PlaySound("button");
+		SceneManager.LoadScene("MainScene");
 	}
 
 	public void SettingsButton() {
-		AudioManager.Inst.PlaySound("Button");
+		AudioManager.Inst.PlaySound("button");
 		creditsWindow.SetActive(false);
-		soundMenu.OpenMenu();
 	}
 
 	public void Credits() {
-		AudioManager.Inst.PlaySound("Button");
-		soundMenu.CloseMenu();
+		AudioManager.Inst.PlaySound("button");
 		creditsWindow.SetActive(true);
 	}
 
@@ -33,24 +29,7 @@ public class MainMenuUI : MonoBehaviour
 	}
 
 	public void CloseWindows() {
-		AudioManager.Inst.PlaySound("Button");
-		soundMenu.CloseMenu();
+		AudioManager.Inst.PlaySound("button");
 		creditsWindow.SetActive(false);
-	}
-
-	public void LowerMusic() {
-		soundMenu.LowerMusic();
-	}
-
-	public void RaiseMusic() {
-		soundMenu.RaiseMusic();
-	}
-
-	public void LowerSound() {
-		soundMenu.LowerSound();
-	}
-
-	public void RaiseSound() {
-		soundMenu.RaiseSound();
 	}
 }

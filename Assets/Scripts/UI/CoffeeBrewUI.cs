@@ -12,6 +12,7 @@ public class CoffeeBrewUI : MonoBehaviour
     [SerializeField] private GameObject CoffeeChoicesGO = null;
     [SerializeField] private GameObject BorderGO = null;
     [SerializeField] private Transform CustomersContainer = null;
+    [SerializeField] private GameObject brewButtonGO = null;
 
     [SerializeField] private GameObject customerFacePrefab = null;
 
@@ -31,21 +32,28 @@ public class CoffeeBrewUI : MonoBehaviour
 
 
     private string customerName;
-    private CoffeeManager.BrewType brewChoice;
-    private CoffeeArt artChoice;
+    private CoffeeManager.BrewType brewChoice = CoffeeManager.BrewType.None;
+    private CoffeeArt artChoice = CoffeeArt.None;
 
     private List<GameObject> CustomerGOs = new List<GameObject>();
 
+    public bool IsBrewing { get; private set; } = false;
+
 	private void Awake() {
         Inst = this;
+	}
+
+	private void Start() {
+
         // test
         AddCustomer("Reginald");
         AddCustomer("Reginald");
-	}
+    }
 
 	public void ActivateCoffeemachine() {
         BorderGO.SetActive(true);
         OrdersGO.SetActive(true);
+        IsBrewing = true;
 	}
 
     public void AddCustomer(string name) {
@@ -58,9 +66,14 @@ public class CoffeeBrewUI : MonoBehaviour
     public void SetCustomer(string name) {
         customerName = name;
         CoffeeChoicesGO.SetActive(true);
-		ArtOne.onClick.AddListener(() => { ClickArtButton(1); SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[0]); });
-		ArtTwo.onClick.AddListener(() => { ClickArtButton(2); SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[1]); });
-		ArtThree.onClick.AddListener(() => { ClickArtButton(3); SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[2]); });
+        brewButtonGO.SetActive(false);
+
+        ClickCoffeeButton(-1);
+        ClickArtButton(-1);
+
+		ArtOne.onClick.AddListener(() => { SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[0]); ClickArtButton(0);  });
+		ArtTwo.onClick.AddListener(() => { SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[1]); ClickArtButton(1);  });
+		ArtThree.onClick.AddListener(() => { SetCoffeeArt(CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[2]); ClickArtButton(2);  });
 
 		ArtOneImage.sprite = ResourcesLibrary.Inst.CoffeeArtDictionary[CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[0]];
 		ArtTwoImage.sprite = ResourcesLibrary.Inst.CoffeeArtDictionary[CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[1]];
@@ -87,6 +100,7 @@ public class CoffeeBrewUI : MonoBehaviour
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 PumpkinBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                brewChoice = CoffeeManager.BrewType.Coffee;
                 break;
 
             case 1:
@@ -95,6 +109,7 @@ public class CoffeeBrewUI : MonoBehaviour
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 PumpkinBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                brewChoice = CoffeeManager.BrewType.Matcha;
                 break;
             case 2:
 
@@ -102,6 +117,7 @@ public class CoffeeBrewUI : MonoBehaviour
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
                 PumpkinBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                brewChoice = CoffeeManager.BrewType.Cocoa;
                 break;
 
             case 3:
@@ -110,28 +126,53 @@ public class CoffeeBrewUI : MonoBehaviour
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 PumpkinBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
+                brewChoice = CoffeeManager.BrewType.Pumpkin;
+                break;
+
+            case -1:
+                CoffeeBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                PumpkinBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
+                brewChoice = CoffeeManager.BrewType.None;
                 break;
 		}
+        VerifyCoffee();
 	}
 
     public void ClickArtButton(int num) {
         switch (num) {
-            case 1:
+            case 0:
                 ((Image)ArtOne.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorderPressed;
                 ((Image)ArtTwo.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 ((Image)ArtThree.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 break;
-            case 2:
+            case 1:
                 ((Image)ArtOne.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 ((Image)ArtTwo.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorderPressed;
                 ((Image)ArtThree.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 break;
-            case 3:
+            case 2:
                 ((Image)ArtOne.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 ((Image)ArtTwo.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
                 ((Image)ArtThree.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorderPressed;
                 break;
+            case -1:
+                ((Image)ArtOne.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
+                ((Image)ArtTwo.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
+                ((Image)ArtThree.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorder;
+                break;
 
+        }
+        VerifyCoffee();
+	}
+
+    private void VerifyCoffee() {
+        if (brewChoice != CoffeeManager.BrewType.None && artChoice != CoffeeArt.None) {
+            brewButtonGO.SetActive(true);
+        }
+        else {
+            Debug.Log("NO: " + brewChoice + " || " + artChoice);
 		}
 	}
 
@@ -142,6 +183,7 @@ public class CoffeeBrewUI : MonoBehaviour
         ArtThree.onClick.RemoveAllListeners();
 
         AudioManager.Inst.PlaySound("coffeepour");
+        brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", true);
         StartCoroutine(DisableGOs());
     }
 
@@ -149,8 +191,13 @@ public class CoffeeBrewUI : MonoBehaviour
 
         yield return new WaitForSeconds(3.2f);
 
+        brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", false);
+
+        yield return new WaitForSeconds(1f);
         BorderGO.SetActive(false);
         OrdersGO.SetActive(false);
         CoffeeChoicesGO.SetActive(false);
+        brewButtonGO.SetActive(false);
+        IsBrewing = false;
     }
 }
