@@ -1,3 +1,4 @@
+using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Interactor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (DialogueManager.Inst.IsTalking) return;
+		if (ConversationManager.Instance.IsConversationActive) return;
 
 		if (Input.GetKeyDown(KeyCode.E) && interactObjs.Count > 0) 
 		{

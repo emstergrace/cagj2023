@@ -66,6 +66,12 @@ namespace DialogueEditor
             }
         }
 
+        public Conversation CurrentConversation {
+
+
+            get { return m_conversation; }
+		}
+
         // Private
         private float m_elapsedScrollTime;
         private int m_scrollIndex;

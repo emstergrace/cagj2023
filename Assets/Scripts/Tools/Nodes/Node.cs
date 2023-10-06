@@ -104,7 +104,7 @@ public class Node
             id = Guid.NewGuid().ToString();
     }
 
-    public void Drag(Vector2 delta)
+    public virtual void Drag(Vector2 delta)
     {
         rect.position += delta;
         inPoint.updateRect(rect);
@@ -122,15 +122,6 @@ public class Node
         GUI.Box(rect, "", style);
 
         GUI.color = Color.white;
-        /*
-        if (type == nodeType.Camera)
-        {
-            GUI.Label(new Rect(rect.position.x + 15, rect.position.y + 15, rect.width - 30, rect.height - 20), "Target: ");
-            cam.targetToFollow = GUI.TextField(new Rect(rect.position.x + 70, rect.position.y + 15, rect.width - 110, rect.height - 60), cam.targetToFollow);
-            GUI.Label(new Rect(rect.position.x + 15, rect.position.y + 40, rect.width - 30, rect.height - 20), "Follow time: ");
-            cam.followTime = EditorGUI.FloatField(new Rect(rect.position.x + 95, rect.position.y + 40, rect.width - 200, rect.height - 60), cam.followTime);
-        }
-        */
     }
 
     public bool ProcessEvents(Event e)
