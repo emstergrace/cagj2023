@@ -210,19 +210,20 @@ namespace DialogueEditor
 
         private void DoClickBehaviour()
         {
-            switch (m_buttonType)
-            {
-                case eButtonType.Speech:
-                    ConversationManager.Instance.SpeechSelected(m_node as SpeechNode);
-                    break;
+            if (ConversationManager.Instance.State == ConversationManager.eState.Idle) {
+                switch (m_buttonType) {
+                    case eButtonType.Speech:
+                        ConversationManager.Instance.SpeechSelected(m_node as SpeechNode);
+                        break;
 
-                case eButtonType.Option:
-                    ConversationManager.Instance.OptionSelected(m_node as OptionNode);
-                    break;
+                    case eButtonType.Option:
+                        ConversationManager.Instance.OptionSelected(m_node as OptionNode);
+                        break;
 
-                case eButtonType.End:
-                    ConversationManager.Instance.EndButtonSelected();
-                    break;
+                    case eButtonType.End:
+                        ConversationManager.Instance.EndButtonSelected();
+                        break;
+                }
             }
         }
 

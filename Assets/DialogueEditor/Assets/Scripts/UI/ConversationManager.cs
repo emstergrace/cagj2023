@@ -7,7 +7,7 @@ namespace DialogueEditor
 {
     public class ConversationManager : MonoBehaviour
     {
-        private enum eState
+        public enum eState
         {
             TransitioningDialogueBoxOn,
             ScrollingText,
@@ -76,7 +76,7 @@ namespace DialogueEditor
         private float m_elapsedScrollTime;
         private int m_scrollIndex;
         public int m_targetScrollTextCount;
-        private eState m_state;
+        private eState m_state; public eState State { get { return m_state; } }
         private float m_stateTime;
         
         private Conversation m_conversation;
