@@ -9,7 +9,43 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private MovementController playerMovement = null; public MovementController MoveController { get { return playerMovement; } }
 
-	private bool holdingCoffee = false; public void HoldCoffee(bool val) { holdingCoffee = val; playerMovement.animator.SetBool("HoldingCoffee", val); }
+	[Header("Coffees")]
+	[SerializeField] private GameObject Coffee = null;
+	[SerializeField] private GameObject HotChocolate = null;
+	[SerializeField] private GameObject Matcha = null;
+	[SerializeField] private GameObject Pumpkin = null;
+
+	private bool holdingCoffee = false; 
+	
+	public void HoldCoffee(bool val) { 
+		holdingCoffee = val; 
+		playerMovement.animator.SetBool("HoldingCoffee", val); 
+		if (val) {
+			switch (CoffeeManager.Inst.CurrentCoffee.Brew) {
+				case CoffeeManager.BrewType.Coffee:
+					Coffee.SetActive(true);
+					break;
+
+				case CoffeeManager.BrewType.Cocoa:
+					HotChocolate.SetActive(true);
+					break;
+
+				case CoffeeManager.BrewType.Matcha:
+					Matcha.SetActive(true);
+					break;
+
+				case CoffeeManager.BrewType.Pumpkin:
+					Pumpkin.SetActive(true);
+					break;
+			}
+		}
+		else {
+			Coffee.SetActive(false);
+			HotChocolate.SetActive(false);
+			Matcha.SetActive(false);
+			Pumpkin.SetActive(false);
+		}
+	}
 
 	private void Awake() {
         Inst = this;
