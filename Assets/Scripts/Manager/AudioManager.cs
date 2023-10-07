@@ -101,6 +101,18 @@ public class AudioManager : MonoBehaviour
 			Debug.LogError("Sounds dictionary does not contain sound for " + name);
 	}
 
+	public void StopSound(string name) {
+		if (SoundsDictionary.ContainsKey(name)) {
+			if (SoundsDictionary[name] != null)
+				SoundsDictionary[name].Stop();
+			else {
+				Debug.LogError("Sounds dictionary contains listing for [" + name + "] but no sound associated");
+			}
+		}
+		else
+			Debug.LogError("Sounds dictionary does not contain sound for " + name);
+	}
+
 }
 [System.Serializable]
 public class Sound

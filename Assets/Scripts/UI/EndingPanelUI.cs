@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class EndingPanelUI : MonoBehaviour
 {
-    
-    public void OpenMainMenu() {
+    public GameObject happyPanel;
+    public GameObject neutralPanel;
+    public GameObject sadPanel;
+    public GameObject menuButton;
+
+	private void Start() {
+        CoffeeManager.Inst.endingPanel = this;
+	}
+
+	public void OpenMainMenu() {
         SceneManager.LoadScene("Menu");
 	}
 

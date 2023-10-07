@@ -42,7 +42,7 @@ public class CoffeeBrewUI : MonoBehaviour
     private CoffeeManager.BrewType brewChoice = CoffeeManager.BrewType.None;
     private CoffeeArt artChoice = CoffeeArt.None;
 
-    private List<GameObject> CustomerGOs = new List<GameObject>();
+    private Dictionary<string, GameObject> CustomerDict = new Dictionary<string, GameObject>();
 
     public bool IsBrewing { get; private set; } = false;
 
@@ -63,6 +63,8 @@ public class CoffeeBrewUI : MonoBehaviour
             OrdersGO.SetActive(true);
             backButtonGO.SetActive(true);
 
+            AudioManager.Inst.PlaySound("steam");
+
             IsBrewing = true;
         }
         else {
@@ -75,7 +77,7 @@ public class CoffeeBrewUI : MonoBehaviour
         brewChoice = CoffeeManager.BrewType.None;
         ClickArtButton(-1);
         ClickCoffeeButton(-1);
-
+        AudioManager.Inst.StopSound("steam");
 
         BorderGO.SetActive(false);
         OrdersGO.SetActive(false);
@@ -93,7 +95,12 @@ public class CoffeeBrewUI : MonoBehaviour
         GameObject newCust = Instantiate(customerFacePrefab, CustomersContainer);
         newCust.GetComponent<UnityEngine.UI.Image>().sprite = ResourcesLibrary.Inst.CustomerDictionary[name];
         newCust.GetComponent<Button>().onClick.AddListener(() => { SetCustomer(name); newCust.transform.localScale = Vector3.one * 1.35f; });
-        CustomerGOs.Add(newCust);
+        CustomerDict.Add(name, newCust);
+	}
+
+    public void RemoveCustomer(string name) {
+        Destroy(CustomerDict[name]);
+        CustomerDict.Remove(name);
 	}
 
     public void SetCustomer(string name) {
@@ -114,8 +121,8 @@ public class CoffeeBrewUI : MonoBehaviour
 		ArtTwoImage.sprite = ResourcesLibrary.Inst.CoffeeArtDictionary[CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[1]];
         ArtThreeImage.sprite = ResourcesLibrary.Inst.CoffeeArtDictionary[CoffeeManager.Inst.CoffeeDict[name].coffeeArtChoices.Choices[2]];
 
-        for (int i = 0; i < CustomerGOs.Count; i++) {
-            CustomerGOs[i].transform.localScale = Vector3.one;
+        foreach(KeyValuePair<string, GameObject> kvp in CustomerDict) {
+            kvp.Value.transform.localScale = Vector3.one;
 		}
 
     }
@@ -129,6 +136,7 @@ public class CoffeeBrewUI : MonoBehaviour
 	}
 
     public void ClickCoffeeButton(int num) {
+        AudioManager.Inst.PlaySound("interact");
         switch (num) {
             case 0:
                 CoffeeBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
@@ -173,6 +181,7 @@ public class CoffeeBrewUI : MonoBehaviour
 	}
 
     public void ClickArtButton(int num) {
+        AudioManager.Inst.PlaySound("interact");
         switch (num) {
             case 0:
                 ((Image)ArtOne.targetGraphic).sprite = ResourcesLibrary.Inst.SquareBorderPressed;
@@ -238,6 +247,8 @@ public class CoffeeBrewUI : MonoBehaviour
         brewButtonGO.GetComponent<Button>().interactable = true;
         backButtonGO.GetComponent<Button>().interactable = true;
         IsBrewing = false;
+
+        AudioManager.Inst.PlaySound("playbutton");
 
         customerName = "";
 	}

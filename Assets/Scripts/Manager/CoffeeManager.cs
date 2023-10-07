@@ -17,9 +17,7 @@ public class CoffeeManager : MonoBehaviour
 	public NPCConversation sadDay = null;
 
 	[Header("Ending Panels")]
-	public GameObject happyPanel = null;
-	public GameObject neutralPanel = null;
-	public GameObject sadPanel = null;
+	public EndingPanelUI endingPanel = null;
 
 	public Coffee CurrentCoffee { get; private set; } = null;
 
@@ -82,23 +80,24 @@ public class CoffeeManager : MonoBehaviour
 			else {
 				ConversationManager.Instance.StartConversation(sadDay);
 			}
+			StartCoroutine(ShowGameOverPanel());
 		}
-		StartCoroutine(ShowGameOverPanel());
 	}
 
 	IEnumerator ShowGameOverPanel() {
+		yield return null;
 		while (ConversationManager.Instance.IsConversationActive) {
 			yield return null;
 		}
 
 		if (HappinessMeter.Inst.State == HappyState.Happy) {
-			happyPanel.SetActive(true);
+			endingPanel.happyPanel.SetActive(true);
 		}
 		else if (HappinessMeter.Inst.State == HappyState.Neutral) {
-			neutralPanel.SetActive(true);
+			endingPanel.neutralPanel.SetActive(true);
 		}
 		else {
-			sadPanel.SetActive(true);
+			endingPanel.sadPanel.SetActive(true);
 		}
 	}
 

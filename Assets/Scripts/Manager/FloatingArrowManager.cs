@@ -16,6 +16,11 @@ public class FloatingArrowManager : MonoBehaviour
 
 	private void Awake() {
         Inst = this;
+        arrowDict.Add("Reginald", ReginaldArrow);
+        arrowDict.Add("Santiago", SantiagoArrow);
+        arrowDict.Add("Lazlo", LazloArrow);
+        arrowDict.Add("Brinley", BrinleyArrow);
+        arrowDict.Add("Saanvi", SaanviArrow);
 	}
 
 	public void ActivateFloatingArrow(string name, bool val = true) {

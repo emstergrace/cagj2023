@@ -168,6 +168,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118380345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9043616144561260282, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
+  m_PrefabInstance: {fileID: 3840513402348733134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd75773baf8ed043aacf5a7eba2abdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161327900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 84069423450074187, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
@@ -1096,17 +1107,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1990695145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6466269101641547446, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-  m_PrefabInstance: {fileID: 3840513402348733134}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2087035289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,98 +1287,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1155863007}
-    - target: {fileID: 953357781548803762, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 953357781548803762, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 953357781548803762, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 953357781548803762, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327930348751744948, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327930348751744948, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327930348751744948, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1327930348751744948, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1536686349652067605, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1555768546416065182, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555768546416065182, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555768546416065182, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555768546416065182, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959598673453694433, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1959598673453694433, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871350115388674158, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965845846157193196, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1155863007}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3572573807403747116, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3915923043184270005, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1459,155 +1379,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118656906559980265, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118656906559980265, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118656906559980265, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118656906559980265, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139877491653645950, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139877491653645950, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139877491653645950, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139877491653645950, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4283142797236913827, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4283142797236913827, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4283142797236913827, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4283142797236913827, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393067794509339705, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1990695145}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4460378369742988428, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5070597937182195345, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5135188083210024529, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1155863007}
-    - target: {fileID: 6246385884299059423, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777226660227498464, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8130705973400701715, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8393210846792522857, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8393210846792522857, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8393210846792522857, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677996004503909990, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677996004503909990, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677996004503909990, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677996004503909990, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 9043616144561260282, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
+      propertyPath: MaxHappiness
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
+--- !u!114 &3840513402348733135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3758816173286437677, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
+  m_PrefabInstance: {fileID: 3840513402348733134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec120df8422ff343961f1eb21dd5ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7136892770727379862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1769,6 +1568,10 @@ PrefabInstance:
       propertyPath: happyPanel
       value: 
       objectReference: {fileID: 215450854}
+    - target: {fileID: 8588787572223395671, guid: 6034634ef50620e41886321d265b5809, type: 3}
+      propertyPath: endingPanel
+      value: 
+      objectReference: {fileID: 3840513402348733135}
     - target: {fileID: 8588787572223395671, guid: 6034634ef50620e41886321d265b5809, type: 3}
       propertyPath: neutralPanel
       value: 
@@ -2073,9 +1876,278 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 118380345}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HappinessMeter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: json
+      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":97.5,"yPos":174},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Sorry?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":458.5,"yPos":177},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+        your coffee order...","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":-95.5,"yPos":431},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        don''t think I recognize you, sorry","parentUIDs":[30],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":184.5,"yPos":432},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Dude,
+        just give me your coffee order...","parentUIDs":[30],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":-194.5,"yPos":847},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Maybe
+        you should go back?","parentUIDs":[24],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":52.5,"yPos":849},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        will literally leave if you don''t tell me your coffee order","parentUIDs":[24],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":586.5,"yPos":847},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+        on, have a little treat!","parentUIDs":[28],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":311.5,"yPos":790},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Order
+        the coffee, or I swear...","parentUIDs":[28],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":314.5,"yPos":1320},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"One
+        pumpkin spice latte coming up!","parentUIDs":[18,20,26],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":216.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+        alright. I know what you want. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":-104.5,"yPos":246},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+        autograph, obviously! I saw you eyeing me on the cover of that magazine there.
+        ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-100.5,"yPos":512},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+        okay to be embarrassed, you know. I get recognized all the time, don''t be
+        shy. ","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":-100.5,"yPos":606},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"You''ve
+        probably read the excerpt about my expedition to Antartica, yes? ","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":-100.5,"yPos":714},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"God,
+        I miss the arctic... So much better than the forest, I say. ","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":455.5,"yPos":546},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Ooh,
+        see that''s a difficult one. On the one hand, I could go for a nice dark
+        roast. ","parentUIDs":[2,5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":-192.5,"yPos":959},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Ha!
+        I would if I could! If it weren''t for my darn knees. They can sense the
+        cold, you know. ","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":563.5,"yPos":1062},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+        know, I think I will! I''ll take a pumpkin spice latte, if you please! ","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-195.5,"yPos":1052},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+        know, they are feeling a little cold now. Let''s go with a pumpkin spice
+        latte if you please! I deserve a splurge every once in a while!","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":314.5,"yPos":1062},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"*Ahem*...
+        Jealous much? A pumpkin spice latte please. Extra pumpkin!","parentUIDs":[11,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":149,"yPos":553},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+        what happens when you appear on the cover of National Topographic.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":147,"yPos":662},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"''10
+        Years Among the Penguins'', great article really. ","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":-355,"yPos":731},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+        would you rather live with? Penguins, or wolves? ","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-437,"yPos":835},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        feel like the answer is self-evident.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":27,"yPos":988},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Not
+        great when living in below zero temperatures!","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":585,"yPos":1183},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"It''ll
+        get me into the autumnal spirit before I go on my next adventure!","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":705,"yPos":606},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Something
+        earthy and rich. ","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":767,"yPos":707},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"On
+        the other hand, I could give into my more basic instincts and get a pumpkin
+        spice latte.","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":132,"yPos":276},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+        okay, don''t be shy. People ask for autographs all the time. ","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-104,"yPos":336},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+        just comes with the job, ya know. ","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Lazlo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 118380345}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HappinessMeter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2370167926451627313, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: m_Name
       value: ArtLayout
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 118380345}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increment
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HappinessMeter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925951684065356472, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: json
+      value: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":151.700012,\"yPos\":265},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Um,
+        is everything okay over here?\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":555.7,\"yPos\":791},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Are
+        you going to order or not...\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":152.700012,\"yPos\":1036},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
+        you want to talk about it?\",\"parentUIDs\":[8,12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":317.7,\"yPos\":789},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
+        rough, buddy. Coffee?\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":478.7,\"yPos\":2739},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+        still haven't ordered either...\",\"parentUIDs\":[12,27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":82.70001,\"yPos\":2743},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ouch
+        that's rough. Maybe a nice cup of something warm will help brighten your
+        day?\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":351.7,\"yPos\":3287},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"One
+        macha coming up!\",\"parentUIDs\":[29,32],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":356.7,\"yPos\":-76},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        can't believe it...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":358.7,\"yPos\":36.9999847},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+        so dead.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":356.7,\"yPos\":146.999969},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        will literally never recover from this...\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":150.700012,\"yPos\":353.999939},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        think you'll find everything is very much NOT okay.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":150.700012,\"yPos\":460},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        can't even believe it...\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":152.700012,\"yPos\":559},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Have
+        you ever been so embarrassed that you just want to crawl under a rock and
+        cry?\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":154.700012,\"yPos\":678},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Literally
+        traumatizing.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":439.7,\"yPos\":891},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gods,
+        I can't even order a coffee correctly!\",\"parentUIDs\":[4,10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":437.7,\"yPos\":1071},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+        such an embarrassment...\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":150.700012,\"yPos\":1233},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\\\"Do
+        you want to talk about it\\\", he says! Gods, this was lowkey a very, VERY
+        bad day. I\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":150.700012,\"yPos\":1345},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"My
+        alarm didn't go off, I ran out of toothpaste, one of the flowers fell off
+        of my favorite hat...\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":149.700012,\"yPos\":1467},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
+        you know how long it took to make this hat? \",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":149.700012,\"yPos\":1579},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"WEEKS!\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.700012,\"yPos\":1704},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Then
+        what did I do?\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":143.700012,\"yPos\":1829},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        literally stepped on a bee before my midterm.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":140.700012,\"yPos\":1960},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+        does one even do that?!\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.700012,\"yPos\":2078},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Have
+        you ever had a swollen toe while trying to write quadratic formulas?\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.700012,\"yPos\":2201},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Didn't
+        think so...\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":141.700012,\"yPos\":2319},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        should honestly just lock myself in my bedroom and never come out.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":140.700012,\"yPos\":2443},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"and
+        on top of that, I was supposed to meet my lab partner to study, and I ended
+        up at the wrong friggin' caf\xE9! \",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142.700012,\"yPos\":2567},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+        can't catch a break, on god.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":480.7,\"yPos\":2837},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Just
+        give me a macha...\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":82.70001,\"yPos\":2856},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+        know, that sounds like a solid plan!\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.70001,\"yPos\":2991},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Could
+        I get a latte? Actually, no! I'll take a macha please!\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.70001,\"yPos\":3120},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Love
+        a good macha.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-113.799988,\"yPos\":1291},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+        can tell you that for certain...\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Brinley\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-104.799988,\"yPos\":1621},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Like,
+        literally weeks!\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lazlo\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 118380345}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increment
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HappinessMeter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: json
+      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":535.9,"yPos":-19.9999847},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
+        I get you something?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":68.8999939,"yPos":-14.9999847},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Everything
+        alright?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":231.9,"yPos":243.000015},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+        really? Where is home?","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":-22.1000061,"yPos":247.000015},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+        beautiful here too...","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":541.9,"yPos":633},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+        sorry, we''re out of tea today. Is there something else I can get you?","parentUIDs":[7,23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":772.9,"yPos":637},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"No...","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":473.900024,"yPos":1422},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"
+        Coming right up!","parentUIDs":[12,14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":289.9,"yPos":633},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Then
+        maybe you should go back...","parentUIDs":[23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":99.8999939,"yPos":963},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
+        right, I apologize. Is there something I can get for you?","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":323.9,"yPos":963},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
+        you going to order or not?","parentUIDs":[17],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":270.9,"yPos":-139.999985},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":57.8999939,"yPos":51.0000153},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+        sorry, I didn''t see you there. ","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":725.9,"yPos":469},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+        sorry, I didn''t see you there. Do you have chai, perhaps?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":274.9,"yPos":303},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        come from a small area in India called Wayanad. ","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":285.9,"yPos":419},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        can still remember the smell in the air after a monsoon. I miss it sometimes,
+        especially on days such as today...","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":469.900024,"yPos":1156},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*
+        Just a coffee.","parentUIDs":[9,18,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":703.9,"yPos":1156},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"That
+        is unfortunate, but oh well! I''ll take a coffee, please.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-50.1000061,"yPos":733},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+        nothing wrong with remembering somewhere that meant something to you, you
+        know.","parentUIDs":[6,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-68.1000061,"yPos":837},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
+        because one holds delightful memories of one place does not mean I cannot
+        look back on my home in melancholy from time to time. ","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":61.8999939,"yPos":145.000015},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        was just thinking about home. It''s beautiful this time of year.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":519.9,"yPos":357},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        used to sit outside with a cup of warm chai and listen to the sound of the
+        rain as it pattered onto the trees.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":73.8999939,"yPos":508},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"
+        The air here just smells like fish...","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":343.9,"yPos":522},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say,
+        you wouldn''t happen to have any chai, would you?","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 118380345}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Increment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HappinessMeter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8942028036254249459, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: m_LocalPosition.x

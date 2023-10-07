@@ -70,7 +70,7 @@ public class NPCOrder : MonoBehaviour, IInteractable
                 else if (CoffeeManager.Inst.CurrentCoffee.CustomerName == CustomerName) {
                     if (CoffeeManager.CurrentBrew != BrewOfChoice) {
                         ConversationManager.Instance.StartConversation(givingWrongCoffee);
-                        HappinessMeter.Inst.Increment(-5);
+                        HappinessMeter.Inst.Increment(-2);
                         soundSource.clip = ewwSound;
                         soundSource.Play();
                         satisfied = -2;
@@ -78,7 +78,7 @@ public class NPCOrder : MonoBehaviour, IInteractable
                     else {
                         if (CoffeeManager.CurrentArt == CoffeeManager.Inst.CoffeeDict[CustomerName].coffeeArtChoices.Choices[0]) {
                             ConversationManager.Instance.StartConversation(givingRightCoffeeYay);
-                            HappinessMeter.Inst.Increment(3);
+                            HappinessMeter.Inst.Increment(2);
                             soundSource.clip = yaySound;
                             soundSource.Play();
                             satisfied = 1;
@@ -93,7 +93,7 @@ public class NPCOrder : MonoBehaviour, IInteractable
                         }
                         if (CoffeeManager.CurrentArt == CoffeeManager.Inst.CoffeeDict[CustomerName].coffeeArtChoices.Choices[2]) {
                             ConversationManager.Instance.StartConversation(givingRightCoffeeGross);
-                            HappinessMeter.Inst.Increment(-2);
+                            HappinessMeter.Inst.Increment(0);
                             soundSource.clip = ewwSound;
                             soundSource.Play();
                             satisfied = -1;
@@ -101,6 +101,9 @@ public class NPCOrder : MonoBehaviour, IInteractable
 					}
                     hasGivenCoffee = true;
                     FloatingArrowManager.Inst.ActivateFloatingArrow(CustomerName, false);
+                    CoffeeOnTable.Inst.GiveCoffee(CustomerName, CoffeeManager.CurrentBrew);
+                    CoffeeBrewUI.Inst.RemoveCustomer(CustomerName);
+                    CoffeeManager.Inst.FinishedOrder();
                 }
 
             }
