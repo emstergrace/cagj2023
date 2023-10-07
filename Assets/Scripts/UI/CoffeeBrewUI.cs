@@ -214,6 +214,7 @@ public class CoffeeBrewUI : MonoBehaviour
         AudioManager.Inst.PlaySound("coffeepour");
         brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", true);
         brewButtonGO.GetComponent<Button>().interactable = false;
+        backButtonGO.GetComponent<Button>().interactable = false;
         StartCoroutine(DisableGOs());
 	}
 
@@ -234,8 +235,8 @@ public class CoffeeBrewUI : MonoBehaviour
 		brewButtonGO.SetActive(false);
         fallSprites.SetActive(false);
         backButtonGO.SetActive(false);
-
         brewButtonGO.GetComponent<Button>().interactable = true;
+        backButtonGO.GetComponent<Button>().interactable = true;
         IsBrewing = false;
 
         customerName = "";
