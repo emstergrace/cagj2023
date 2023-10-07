@@ -675,26 +675,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 19
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":202.700012,"yPos":-553.199951},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
-    I help you sir?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":482.7,"yPos":-552.199951},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    do you want...","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":180.700012,"yPos":-293.2},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
-    beautiful!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":459.7,"yPos":-295.2},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
-    just a bird...","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":29,"yPos":-49},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
-    so sweet! What happened to her?","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":324,"yPos":-50},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
-    you just order your coffee please...","parentUIDs":[9,10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":591,"yPos":-50},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
-    right. I apologize. Can I take your order, sir?","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":325,"yPos":356},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Coming
-    right up!","parentUIDs":[14,16,18],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":368,"yPos":-717},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    you! Come closer!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":334.7,"yPos":-435.199982},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    see that bird there? That''s a Bohemian Waxwing! Isn''t it beautiful!","parentUIDs":[3,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":174.700012,"yPos":-190.200012},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":199.700012,"yPos":-348.199951},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
+    I help you sir?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":479.7,"yPos":-347.199951},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    do you want...","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":177.700012,"yPos":-88.20001},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    beautiful!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":450.7,"yPos":-86.20001},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    just a bird...","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":26,"yPos":156},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    so sweet! What happened to her?","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":306,"yPos":158},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
+    you just order your coffee please...","parentUIDs":[9,10],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":581,"yPos":162},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
+    right. I apologize. Can I take your order, sir?","parentUIDs":[10],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":319,"yPos":527},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Coming
+    right up!","parentUIDs":[14,16,18],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":365,"yPos":-512},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    you! Come closer!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":331.7,"yPos":-230.199982},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    see that bird there? That''s a Bohemian Waxwing! Isn''t it beautiful!","parentUIDs":[3,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":171.700012,"yPos":14.7999878},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"My
     wife would have loved to see these little guys. She was an avid bird watcher
-    you know. She used to sit out on that very bench and draw birds for hours.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":457.7,"yPos":-197.200012},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
+    you know. She used to sit out on that very bench and draw birds for hours.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":454.7,"yPos":7.799988},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
     a bird you say! That is a very rare bird, young man. You may not share an interest
-    in such things, but you would do well to avoid discouraging other people''s hobbies.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":327,"yPos":78},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
-    take a Hot Chocolate.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":584,"yPos":80},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+    in such things, but you would do well to avoid discouraging other people''s hobbies.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":315,"yPos":283},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ll
+    take a Hot Chocolate.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":581,"yPos":285},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
     don''t mind me, I''m sure you''ve had a long day. I''ll take a Hot Chocolate
-    if you please! And maybe soem of those mini marshmallows if you have them!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":31,"yPos":77},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"She
+    if you please! And maybe soem of those mini marshmallows if you have them!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":28,"yPos":282},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"She
     passed a few months back... It hasn''t been the same without her. But I''ll always
-    have her love of birds to remember her by. ","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":33,"yPos":183},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyways!
+    have her love of birds to remember her by. ","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":30,"yPos":388},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyways!
     I''ve kept you long enough, I''m sure you have many people to serve! Could I
     please have a Hot Chocolate? And maybe some of those mini marshmallows if you
     have them!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -785,6 +785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8927026055169450985}
   - component: {fileID: 3943050729091899287}
+  - component: {fileID: 1436045883680323802}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -826,6 +827,25 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &1436045883680323802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371798181774807191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &4459418732737727803
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +873,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.03, y: 1, z: 1}
+  m_LocalScale: {x: 1.24, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7624993024539169745}
@@ -871,16 +891,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":378,"yPos":97},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Why...
-    Why look at this! It''s perfect! Ah, thank you... You''ve made a silly old man
-    very happy today. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":342,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"One
+    Hot Chocolate!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":342,"yPos":139},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Why...Why
+    look at this! It''s perfect! Ah. thank you... You''ve made a silly old man very
+    happy today.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   NodeSerializedDataList:
   - {fileID: 2560802961807524130}
+  - {fileID: 635864101539791493}
   ContinueFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   Event:
@@ -913,7 +935,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.13, y: 1, z: 1}
+  m_LocalScale: {x: 1.04, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3494286652717309965}
@@ -931,15 +953,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":342,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hmm...
-    I can''t say I''m a big fan of dogs... thank you anyways.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":339,"yPos":112},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"One
+    Hot Chocolate!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":339,"yPos":222},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Hmm...
+    I can''t say I''m a big fan of dogs... thank you anyways.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   NodeSerializedDataList:
   - {fileID: 7439573134521826772}
+  - {fileID: 8788411440697894901}
   ContinueFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   Event:
@@ -955,6 +979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3494286652717309965}
   - component: {fileID: 7439573134521826772}
+  - component: {fileID: 8788411440697894901}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -996,6 +1021,25 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &8788411440697894901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091320465824534947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &6982105369530287478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1067,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.12, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8927026055169450985}
@@ -1041,15 +1085,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":342,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Aw,
-    look at that! That''s very lovely, that is.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":326,"yPos":108},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"One
+    Hot Chocolate!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"You","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":326,"yPos":216},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Aw,
+    look at that! That''s very lovely, that is.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   NodeSerializedDataList:
   - {fileID: 3943050729091899287}
+  - {fileID: 1436045883680323802}
   ContinueFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   Event:
@@ -1065,6 +1111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7624993024539169745}
   - component: {fileID: 2560802961807524130}
+  - component: {fileID: 635864101539791493}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -1104,6 +1151,25 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &635864101539791493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269307062767352665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &8955825454912314258
