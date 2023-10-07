@@ -205,6 +205,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9849508, y: 2.0546098, z: 0.55035335}
   m_Center: {x: 0.062470794, y: -0.21829903, z: 0.04397761}
+--- !u!114 &161327904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4770048998648238097, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+  m_PrefabInstance: {fileID: 8668546166518470918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161327900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edba1a9c7704e2f4e8a7c787e904f87b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206641959
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +608,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8629564721843589454, guid: b9c402f4664261e40a41daf7e209dfcd, type: 3}
   m_PrefabInstance: {fileID: 3840513402348733134}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1015868171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1055759890221397042, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+  m_PrefabInstance: {fileID: 8668546166518470918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1015868174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015868171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 4
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1001 &1032598309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -923,6 +958,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9278622, y: 1, z: 0.4467012}
   m_Center: {x: 0.46393108, y: 0, z: 0.10347711}
+--- !u!114 &1636630225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5979489216014752519, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+  m_PrefabInstance: {fileID: 8668546166518470918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636630219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54126bc8beb9a4c418bf16b753c3ac80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!108 &1662740211 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 1948777953335635516, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
@@ -954,6 +1000,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4144702, y: 2.254648, z: 0.6046659}
   m_Center: {x: -0.2072351, y: -0.23287642, z: 0.04774961}
+--- !u!114 &1695597870 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5538392904580465641, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+  m_PrefabInstance: {fileID: 8668546166518470918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695597864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cea899ecda0b14a9058f1af1fe3152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865912846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +1933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 609334686598754696, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.13
+      objectReference: {fileID: 0}
     - target: {fileID: 1386744358817147900, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1957,18 +2018,18 @@ PrefabInstance:
     - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 118380345}
+      objectReference: {fileID: 161327904}
     - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Increment
+      value: IncrementHappiness
       objectReference: {fileID: 0}
     - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: HappinessMeter, Assembly-CSharp
+      value: NPCOrder, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1809699941746564258, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2067,22 +2128,22 @@ PrefabInstance:
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 118380345}
+      objectReference: {fileID: 1695597870}
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Increment
+      value: IncrementHappiness
       objectReference: {fileID: 0}
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: HappinessMeter, Assembly-CSharp
+      value: NPCOrder, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7110995818471239346, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2090,31 +2151,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":535.9,"yPos":-19.9999847},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
-        I get you something?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":68.8999939,"yPos":-14.9999847},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Everything
-        alright?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":231.9,"yPos":243.000015},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
-        really? Where is home?","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":-22.1000061,"yPos":247.000015},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
-        beautiful here too...","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":541.9,"yPos":633},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
-        sorry, we''re out of tea today. Is there something else I can get you?","parentUIDs":[7,23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":772.9,"yPos":637},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"No...","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":473.900024,"yPos":1422},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"
-        Coming right up!","parentUIDs":[12,14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":289.9,"yPos":633},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Then
-        maybe you should go back...","parentUIDs":[23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":99.8999939,"yPos":963},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
-        right, I apologize. Is there something I can get for you?","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":323.9,"yPos":963},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
-        you going to order or not?","parentUIDs":[17],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":270.9,"yPos":-139.999985},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":57.8999939,"yPos":51.0000153},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
-        sorry, I didn''t see you there. ","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":725.9,"yPos":469},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
-        sorry, I didn''t see you there. Do you have chai, perhaps?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":274.9,"yPos":303},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        come from a small area in India called Wayanad. ","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":285.9,"yPos":419},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":450.700073,"yPos":142},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
+        I get you something?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-16.2999878,"yPos":147},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Everything
+        alright?","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":146.700012,"yPos":405},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+        really? Where is home?","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":-106.299988,"yPos":409},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+        beautiful here too...","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":456.700073,"yPos":795},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+        sorry, we''re out of tea today. Is there something else I can get you?","parentUIDs":[7,23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":687.7001,"yPos":799},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"No...","parentUIDs":[7],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":388.700073,"yPos":1584},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"
+        Coming right up!","parentUIDs":[12,14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":204.700012,"yPos":795},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Then
+        maybe you should go back...","parentUIDs":[23],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":14.7000122,"yPos":1125},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
+        right, I apologize. Is there something I can get for you?","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":238.700012,"yPos":1125},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
+        you going to order or not?","parentUIDs":[17],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":185.700012,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-27.2999878,"yPos":213},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+        sorry, I didn''t see you there. ","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":640.7001,"yPos":631},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+        sorry, I didn''t see you there. Do you have chai, perhaps?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":189.700012,"yPos":465},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        come from a small area in India called Wayanad. ","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":200.700012,"yPos":581},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
         can still remember the smell in the air after a monsoon. I miss it sometimes,
-        especially on days such as today...","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":469.900024,"yPos":1156},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*
-        Just a coffee.","parentUIDs":[9,18,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":703.9,"yPos":1156},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"That
-        is unfortunate, but oh well! I''ll take a coffee, please.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-50.1000061,"yPos":733},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+        especially on days such as today...","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":384.700073,"yPos":1318},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"*Sighs*
+        Just a coffee.","parentUIDs":[9,18,19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":618.7001,"yPos":1318},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"That
+        is unfortunate, but oh well! I''ll take a coffee, please.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-135.299988,"yPos":895},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
         nothing wrong with remembering somewhere that meant something to you, you
-        know.","parentUIDs":[6,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-68.1000061,"yPos":837},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
+        know.","parentUIDs":[6,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-153.299988,"yPos":999},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
         because one holds delightful memories of one place does not mean I cannot
-        look back on my home in melancholy from time to time. ","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":61.8999939,"yPos":145.000015},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        was just thinking about home. It''s beautiful this time of year.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":519.9,"yPos":357},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        look back on my home in melancholy from time to time. ","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":-23.2999878,"yPos":307},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        was just thinking about home. It''s beautiful this time of year.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":434.700073,"yPos":519},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"I
         used to sit outside with a cup of warm chai and listen to the sound of the
-        rain as it pattered onto the trees.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":73.8999939,"yPos":508},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"
-        The air here just smells like fish...","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":343.9,"yPos":522},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say,
+        rain as it pattered onto the trees.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":-11.2999878,"yPos":670},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"
+        The air here just smells like fish...","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":258.7,"yPos":684},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say,
         you wouldn''t happen to have any chai, would you?","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Saanvi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
@@ -2128,22 +2189,22 @@ PrefabInstance:
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 118380345}
+      objectReference: {fileID: 1636630225}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Increment
+      value: IncrementHappiness
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: HappinessMeter, Assembly-CSharp
+      value: NPCOrder, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8854010827129113871, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2202,6 +2263,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3336107885219289681, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 492402135}
+    - targetCorrespondingSourceObject: {fileID: 1055759890221397042, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1015868174}
     - targetCorrespondingSourceObject: {fileID: 795237822691629845, guid: d2a29767cbe9b2d439bcf4441620995a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1079072059}

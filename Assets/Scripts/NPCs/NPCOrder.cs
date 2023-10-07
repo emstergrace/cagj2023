@@ -31,9 +31,6 @@ public class NPCOrder : MonoBehaviour, IInteractable
     private bool hasGivenCoffee = false;
     private int satisfied = 0; // -2, -1, 0, 1, for use in hasGivenCoffee
 
-    public void SetHappy(int num) {
-        HappinessMeter.Inst.Increment(num);
-	}
 
 	public void Interact() {
 
@@ -111,5 +108,8 @@ public class NPCOrder : MonoBehaviour, IInteractable
 
 	}
 
+    public void IncrementHappiness(int val) {
+        HappinessMeter.Inst.Increment(val);
+	}
 
 }

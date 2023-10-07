@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSource: {fileID: 7848155902811579693}
-  soundMultiplier: 1
+  soundMultiplier: 0.25
 --- !u!1 &6023615027287798812
 GameObject:
   m_ObjectHideFlags: 0
