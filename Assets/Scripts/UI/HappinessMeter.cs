@@ -16,6 +16,11 @@ public class HappinessMeter : MonoBehaviour
     [SerializeField] private Sprite neutralCoffee = null;
     [SerializeField] private Sprite happyCoffee = null;
 
+    public HappyState State { get {
+            if (Value < MaxHappiness / 3) return HappyState.Sad;
+            else if (Value >= MaxHappiness / 3 && Value <= MaxHappiness * 2 / 3) return HappyState.Neutral;
+            else return HappyState.Happy;
+		} }
 
 	private void Awake() {
         Inst = this;
@@ -40,4 +45,11 @@ public class HappinessMeter : MonoBehaviour
         meter.value = Value;
 	}
 
+}
+
+public enum HappyState
+{
+    Happy,
+    Neutral,
+    Sad
 }

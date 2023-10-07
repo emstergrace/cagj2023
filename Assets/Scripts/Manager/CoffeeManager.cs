@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class CoffeeManager : MonoBehaviour
 {
@@ -9,10 +10,25 @@ public class CoffeeManager : MonoBehaviour
 	public List<PersonCoffeeChoice> CoffeeArtChoices = new List<PersonCoffeeChoice>();
 	private Dictionary<string, PersonCoffeeChoice> coffeeDict = new Dictionary<string, PersonCoffeeChoice>(); public Dictionary<string, PersonCoffeeChoice> CoffeeDict { get { return coffeeDict; } }
 
+	[Header("Final Dialogues")]
+	public NPCConversation finishedOrdersConvo = null;
+	public NPCConversation happyDay = null;
+	public NPCConversation mehDay = null;
+	public NPCConversation sadDay = null;
+
+	[Header("Ending Panels")]
+	public GameObject happyPanel = null;
+	public GameObject neutralPanel = null;
+	public GameObject sadPanel = null;
+
 	public Coffee CurrentCoffee { get; private set; } = null;
 
 	public static BrewType CurrentBrew { get { return Inst.CurrentCoffee.Brew; } }
 	public static CoffeeArt CurrentArt { get { return Inst.CurrentCoffee.Art; } }
+
+	private int ordersDone = 0;
+
+	public bool FinishedAllOrders { get { return ordersDone >= coffeeDict.Count; } }
 
 	public enum BrewType
 	{
@@ -33,8 +49,62 @@ public class CoffeeManager : MonoBehaviour
 
 	public void CreateCoffee(string customer, BrewType brew, CoffeeArt art) {
 		CurrentCoffee = new Coffee(customer, brew, art);
+		PlayerController.Inst.HoldCoffee(true);
 	}
 
+	public void FinishedOrder() {
+		ordersDone++;
+		CurrentCoffee = null;
+		PlayerController.Inst.HoldCoffee(false);
+
+		if (ordersDone == coffeeDict.Count) {
+			StartCoroutine(QueueFinishedOrderConvo());
+		}
+	}
+
+	IEnumerator QueueFinishedOrderConvo() {
+		yield return null;
+		while (ConversationManager.Instance.IsConversationActive) {
+			yield return null;
+		}
+
+		ConversationManager.Instance.StartConversation(finishedOrdersConvo);
+	}
+
+	public void FinishDay() {
+		if (FinishedAllOrders) {
+			if (HappinessMeter.Inst.State == HappyState.Happy) {
+				ConversationManager.Instance.StartConversation(happyDay);
+			}
+			else if (HappinessMeter.Inst.State == HappyState.Neutral) {
+				ConversationManager.Instance.StartConversation(mehDay);
+			}
+			else {
+				ConversationManager.Instance.StartConversation(sadDay);
+			}
+		}
+		StartCoroutine(ShowGameOverPanel());
+	}
+
+	IEnumerator ShowGameOverPanel() {
+		while (ConversationManager.Instance.IsConversationActive) {
+			yield return null;
+		}
+
+		if (HappinessMeter.Inst.State == HappyState.Happy) {
+			happyPanel.SetActive(true);
+		}
+		else if (HappinessMeter.Inst.State == HappyState.Neutral) {
+			neutralPanel.SetActive(true);
+		}
+		else {
+			sadPanel.SetActive(true);
+		}
+	}
+
+	public void QuitGame() {
+		Application.Quit();
+	}
 }
 
 [System.Serializable]

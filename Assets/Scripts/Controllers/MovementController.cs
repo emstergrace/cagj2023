@@ -6,7 +6,7 @@ using System;
 public class MovementController : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigidBody;
-	[SerializeField] private Animator animator = null;
+	[SerializeField] private Animator _anim = null; public Animator animator { get { return _anim; } }
 
 	[SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float runSpeed = 8f;
@@ -34,7 +34,7 @@ public class MovementController : MonoBehaviour
 			rigidBody.velocity = Vector3.zero;
 		}
 
-		animator.SetFloat("speed", currentSpeed);
+		_anim.SetFloat("speed", currentSpeed);
 	}
 
 }

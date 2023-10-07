@@ -99,7 +99,7 @@ public class NPCOrder : MonoBehaviour, IInteractable
                         }
 					}
                     hasGivenCoffee = true;
-
+                    FloatingArrowManager.Inst.ActivateFloatingArrow(CustomerName, false);
                 }
 
             }

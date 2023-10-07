@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DialogueEditor;
 
 public class CoffeeBrewUI : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class CoffeeBrewUI : MonoBehaviour
     public static CoffeeBrewUI Inst { get; private set; }
 
     [SerializeField] private GameObject OrdersGO = null;
+    [SerializeField] private GameObject CoffeeChoicesBG = null;
     [SerializeField] private GameObject CoffeeChoicesGO = null;
     [SerializeField] private GameObject BorderGO = null;
     [SerializeField] private Transform CustomersContainer = null;
     [SerializeField] private GameObject brewButtonGO = null;
+    [SerializeField] private GameObject backButtonGO = null;
+    [SerializeField] private GameObject fallSprites = null;
 
     [SerializeField] private GameObject customerFacePrefab = null;
 
@@ -29,6 +33,9 @@ public class CoffeeBrewUI : MonoBehaviour
     [SerializeField] private Image ArtTwoImage = null;
     [SerializeField] private Button ArtThree = null;
     [SerializeField] private Image ArtThreeImage = null;
+
+    [Header("")]
+    [SerializeField] private NPCConversation alreadyHaveCoffee;
 
 
     private string customerName;
@@ -51,9 +58,35 @@ public class CoffeeBrewUI : MonoBehaviour
     }
 
 	public void ActivateCoffeemachine() {
-        BorderGO.SetActive(true);
-        OrdersGO.SetActive(true);
-        IsBrewing = true;
+        if (CoffeeManager.Inst.CurrentCoffee == null) {
+            BorderGO.SetActive(true);
+            OrdersGO.SetActive(true);
+            backButtonGO.SetActive(true);
+
+            IsBrewing = true;
+        }
+        else {
+            ConversationManager.Instance.StartConversation(alreadyHaveCoffee);
+		}
+	}
+
+    public void CancelCoffee() {
+        artChoice = CoffeeArt.None;
+        brewChoice = CoffeeManager.BrewType.None;
+        ClickArtButton(-1);
+        ClickCoffeeButton(-1);
+
+
+        BorderGO.SetActive(false);
+        OrdersGO.SetActive(false);
+        CoffeeChoicesGO.SetActive(false);
+        CoffeeChoicesBG.SetActive(false);
+        brewButtonGO.SetActive(false);
+        fallSprites.SetActive(false);
+        backButtonGO.SetActive(false);
+
+
+        IsBrewing = false;
 	}
 
     public void AddCustomer(string name) {
@@ -66,6 +99,8 @@ public class CoffeeBrewUI : MonoBehaviour
     public void SetCustomer(string name) {
         customerName = name;
         CoffeeChoicesGO.SetActive(true);
+        CoffeeChoicesBG.SetActive(true);
+        fallSprites.SetActive(true);
         brewButtonGO.SetActive(false);
 
         ClickCoffeeButton(-1);
@@ -104,7 +139,6 @@ public class CoffeeBrewUI : MonoBehaviour
                 break;
 
             case 1:
-
                 CoffeeBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
@@ -112,7 +146,6 @@ public class CoffeeBrewUI : MonoBehaviour
                 brewChoice = CoffeeManager.BrewType.Matcha;
                 break;
             case 2:
-
                 CoffeeBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorderPressed;
@@ -121,7 +154,6 @@ public class CoffeeBrewUI : MonoBehaviour
                 break;
 
             case 3:
-
                 CoffeeBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 MatchaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
                 CocoaBorder.sprite = ResourcesLibrary.Inst.CircleBorder;
@@ -171,9 +203,6 @@ public class CoffeeBrewUI : MonoBehaviour
         if (brewChoice != CoffeeManager.BrewType.None && artChoice != CoffeeArt.None) {
             brewButtonGO.SetActive(true);
         }
-        else {
-            Debug.Log("NO: " + brewChoice + " || " + artChoice);
-		}
 	}
 
     public void BrewButton() {
@@ -184,20 +213,31 @@ public class CoffeeBrewUI : MonoBehaviour
 
         AudioManager.Inst.PlaySound("coffeepour");
         brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", true);
+        brewButtonGO.GetComponent<Button>().interactable = false;
         StartCoroutine(DisableGOs());
-    }
+	}
 
-    private IEnumerator DisableGOs() {
+	private IEnumerator DisableGOs() {
 
-        yield return new WaitForSeconds(3.2f);
+		yield return new WaitForSeconds(3.2f);
 
-        brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", false);
+		brewButtonGO.GetComponent<Animator>().SetBool("IsBrewing", false);
 
-        yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(1f);
+
+        FloatingArrowManager.Inst.ActivateFloatingArrow(customerName, true);
+
         BorderGO.SetActive(false);
-        OrdersGO.SetActive(false);
-        CoffeeChoicesGO.SetActive(false);
-        brewButtonGO.SetActive(false);
+		OrdersGO.SetActive(false);
+		CoffeeChoicesGO.SetActive(false);
+        CoffeeChoicesBG.SetActive(false);
+		brewButtonGO.SetActive(false);
+        fallSprites.SetActive(false);
+        backButtonGO.SetActive(false);
+
+        brewButtonGO.GetComponent<Button>().interactable = true;
         IsBrewing = false;
-    }
+
+        customerName = "";
+	}
 }
