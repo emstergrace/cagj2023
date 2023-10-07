@@ -11,6 +11,9 @@ public class CoffeeManager : MonoBehaviour
 
 	public Coffee CurrentCoffee { get; private set; } = null;
 
+	public static BrewType CurrentBrew { get { return Inst.CurrentCoffee.Brew; } }
+	public static CoffeeArt CurrentArt { get { return Inst.CurrentCoffee.Art; } }
+
 	public enum BrewType
 	{
 		Matcha,

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,8 +15,12 @@ public class PlayerController : MonoBehaviour
 	}
 
     void FixedUpdate() {
-		Vector2 direction = new Vector2(-1f * Input.GetAxisRaw("Horizontal"), -1f * Input.GetAxisRaw("Vertical"));
-		bool sprinting = Input.GetKey(KeyCode.LeftShift);
-		MoveController.Move(direction, sprinting);
+		if (!CoffeeBrewUI.Inst.IsBrewing && !ConversationManager.Instance.IsConversationActive) {
+			Vector2 direction = new Vector2(-1f * Input.GetAxisRaw("Horizontal"), -1f * Input.GetAxisRaw("Vertical"));
+			bool sprinting = Input.GetKey(KeyCode.LeftShift);
+			MoveController.Move(direction, sprinting);
+			if (direction != Vector2.zero)
+				AudioManager.Inst.Walk();
+		}
 	}
 }

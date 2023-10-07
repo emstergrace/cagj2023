@@ -8,17 +8,17 @@ public class MainMenuUI : MonoBehaviour
 	[SerializeField] private GameObject creditsWindow = null;
 
 	public void PlayButton() {
-		AudioManager.Inst.PlaySound("button");
+		AudioManager.Inst.PlaySound("playbutton");
 		SceneManager.LoadScene("MainScene");
 	}
 
 	public void SettingsButton() {
-		AudioManager.Inst.PlaySound("button");
+		AudioManager.Inst.PlaySound("selectbutton");
 		creditsWindow.SetActive(false);
 	}
 
 	public void Credits() {
-		AudioManager.Inst.PlaySound("button");
+		AudioManager.Inst.PlaySound("selectbutton");
 		creditsWindow.SetActive(true);
 	}
 
@@ -29,7 +29,7 @@ public class MainMenuUI : MonoBehaviour
 	}
 
 	public void CloseWindows() {
-		AudioManager.Inst.PlaySound("button");
+		AudioManager.Inst.PlaySound("backbutton");
 		creditsWindow.SetActive(false);
 	}
 }
