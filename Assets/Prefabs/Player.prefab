@@ -220,6 +220,7 @@ Transform:
   - {fileID: 8029128471883331390}
   - {fileID: 6839455084824450184}
   - {fileID: 6045152846736536672}
+  - {fileID: 6299058527896138179}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3298911875175011070
@@ -248,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 1663019674216137643}
-  animator: {fileID: 5441509571826306814}
+  _anim: {fileID: 111161243839572921}
   moveSpeed: 5
   runSpeed: 8
   turnSpeed: 9
@@ -369,6 +370,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactObjs: []
+--- !u!1001 &5827791122069034536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5690047424107385062}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -987020545699610355, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -733827276365443421, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_Name
+      value: Anim_Player_HoldingMugIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 90bee5036e2aa514592484b9f973b4d3, type: 2}
+    - target: {fileID: 6426902747795627441, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+--- !u!95 &111161243839572921 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+  m_PrefabInstance: {fileID: 5827791122069034536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6299058527896138179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a3cf09ddb368d774b819568efa843fa0, type: 3}
+  m_PrefabInstance: {fileID: 5827791122069034536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6941012696327485919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -436,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7e5076309e199dd4ebcb759c901adad8, type: 3}
       propertyPath: m_Name
       value: Anim_Player_Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7e5076309e199dd4ebcb759c901adad8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
