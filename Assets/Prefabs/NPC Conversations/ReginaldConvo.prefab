@@ -597,7 +597,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5061794093210638402}
@@ -616,15 +616,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":243.299988,"yPos":96.9999847},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":344,"yPos":110},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello
+    little birds, you have such marvelous feathers!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
+  DefaultFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   NodeSerializedDataList:
   - {fileID: 172578919973190775}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
+  ContinueFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 6269139059627db45b3042429e1a1be8, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -820,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":342,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Why...
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":378,"yPos":97},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Why...
     Why look at this! It''s perfect! Ah, thank you... You''ve made a silly old man
     very happy today. ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Reginald","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
