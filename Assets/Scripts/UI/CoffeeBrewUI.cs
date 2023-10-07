@@ -53,8 +53,8 @@ public class CoffeeBrewUI : MonoBehaviour
 	private void Start() {
 
         // test
-        AddCustomer("Reginald");
-        AddCustomer("Reginald");
+        //AddCustomer("Reginald");
+        //AddCustomer("Reginald");
     }
 
 	public void ActivateCoffeemachine() {

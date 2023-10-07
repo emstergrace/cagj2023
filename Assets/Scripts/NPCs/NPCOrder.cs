@@ -59,6 +59,7 @@ public class NPCOrder : MonoBehaviour, IInteractable
             if (!takenOrder) {
                 ConversationManager.Instance.StartConversation(preOrder);
                 takenOrder = true;
+                CoffeeBrewUI.Inst.AddCustomer(CustomerName);
             }
             else if (takenOrder) {
                 // post-order, pre-giving coffee

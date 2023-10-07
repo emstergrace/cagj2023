@@ -1880,6 +1880,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6048703329436297643}
+  - component: {fileID: 5220119088954094517}
+  - component: {fileID: 7908793373980614907}
+  - component: {fileID: 8972375724382868733}
   m_Layer: 0
   m_Name: BrinleyConvo
   m_TagString: Untagged
@@ -1911,3 +1914,140 @@ Transform:
   - {fileID: 1547242901190335634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5220119088954094517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094285598388383239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cea899ecda0b14a9058f1af1fe3152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomerName: Brinley
+  BrewOfChoice: 0
+  preOrder: {fileID: 7350596570654187246}
+  withoutCoffee: {fileID: 9205238142514463999}
+  givingRightCoffeeYay: {fileID: 5971221670740112077}
+  givingRightCoffeeMeh: {fileID: 590040247804220159}
+  givingRightCoffeeGross: {fileID: 2641050857528763045}
+  givingWrongCoffee: {fileID: 6883282241975188307}
+  givenCoffeeYay: {fileID: 143665957056785206}
+  givenCoffeeMeh: {fileID: 5724769964779739516}
+  givenCoffeeGross: {fileID: 3933398689806571525}
+  givenWrongCoffee: {fileID: 3933398689806571525}
+  soundSource: {fileID: 7908793373980614907}
+  yaySound: {fileID: 8300000, guid: 9727661f8f1ce5a4a8b9a0c217ee0ccc, type: 3}
+  mehSound: {fileID: 8300000, guid: d45b9b8ac94025a47a0e1cbe916d02da, type: 3}
+  ewwSound: {fileID: 8300000, guid: 240e2eb2290f6c646a72d0f3e89b2d69, type: 3}
+--- !u!82 &7908793373980614907
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094285598388383239}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8972375724382868733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094285598388383239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e23aa86cee3fc8499c55e5f1233e0fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeMultipler: 1
