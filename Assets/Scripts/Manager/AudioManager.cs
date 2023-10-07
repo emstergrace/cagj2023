@@ -7,35 +7,42 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Inst { get; private set; }
 
-	[SerializeField] private AudioListener playerListener;
-
 	#region sounds here
 	// ADD SOUNDS BELOW
 	[Header("Sounds")]
-	[SerializeField] private AudioSource walkNoise = null;
+	[SerializeField] private AudioSource walkNoise = null; public void SetWalkSource(AudioSource aSO) { walkNoise = aSO; }
 	[SerializeField] private List<AudioClip> footNoises = new List<AudioClip>();
 
 	[SerializeField] private List<Sound> sounds = new List<Sound>(); 
 	public Dictionary<string, AudioSource> SoundsDictionary { get; private set; } = new Dictionary<string, AudioSource>();
 
+	public float walkNoiseBuffer = 1f;
+	private float walkNoiseDelay = 1f;
+
 	#endregion
 
 	public void Walk() {
-		if (walkNoise != null && !walkNoise.isPlaying) {
+		if (walkNoiseDelay <= walkNoiseBuffer) {
+			walkNoiseDelay += Time.deltaTime;
+		}
+		if (walkNoise != null && !walkNoise.isPlaying && walkNoiseDelay > walkNoiseBuffer) {
 			footIndex = UnityEngine.Random.Range(0, footNoises.Count);
 			walkNoise.clip = footNoises[footIndex];
 			walkNoise.Play();
+			walkNoiseDelay = 0f;
 		}
 	}
 	public void Sprint(bool val) { if (val && walkNoise.pitch != 2f) walkNoise.pitch = 2f; else if (!val && walkNoise.pitch != 1f) walkNoise.pitch = 1f; }
 	private int footIndex = 0;
+
 	[SerializeField] private List<AudioSource> sceneAudio = new List<AudioSource>();
 	private static float soundVolume = 0.5f; public static float Sound { get { return soundVolume; } }
+
 	public Action<float> NewSoundVolume;
 
 	[Header("Music")]
 	[SerializeField] private AudioSource menuMusic = null;
-	[SerializeField] private AudioSource mainTheme = null;
+	[SerializeField] private AudioSource mainTheme = null; public void SetMainTheme(AudioSource aSo) { mainTheme = aSo; aSo.Play(); }
 	private static float musicVolume = 0.5f; public static float Music { get { return musicVolume; } }
 
 	private void Awake() {
@@ -80,7 +87,6 @@ public class AudioManager : MonoBehaviour
 
 	public void PlayMainTheme() {
 		mainTheme.Play();
-		playerListener.gameObject.SetActive(true);
 	}
 
 	public void PlaySound(string name) {
